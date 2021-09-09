@@ -1,12 +1,19 @@
-<h1>{{title}}</h1>
 
 <router-outlet>
-  <ul>
-    <li><a routerLink="">Homepage</a></li>
-    <li><a routerLink="/education">Education</a></li>
-    <li><a routerLink="/codding">Codding</a></li>
-    <li><a routerLink="/hobbies">Hobbies</a></li>
-
-
-  </ul>
+  <div class="navigation">
+    <ul class=" nav-box nav justify-content-center align-items-center h-100 ">
+      <li class="nav-item">
+        <a class="nav-link homepage active" aria-current="page" routerLink="">Homepage</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link education" routerLink="/education">Education</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link codding" routerLink="/codding">Codding</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link hobbies" routerLink="/hobbies">Hobbies</a>
+      </li>
+    </ul>
+  </div>
 </router-outlet>
